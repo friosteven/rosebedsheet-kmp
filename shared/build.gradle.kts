@@ -38,6 +38,13 @@ kotlin {
             implementation(libs.navigation.compose)
 
             implementation(libs.kotlinx.serialization.json)
+
+            implementation(libs.bundles.ktor)
+        }
+
+        nativeMain.dependencies {
+            implementation(libs.ktor.client.darwin)
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

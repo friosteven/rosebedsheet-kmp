@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                         ) {
                             Button(onClick = {
                                 navController.navigate(ScreenB(
-                                    name = null,
+                                    name = "Steven",
                                     age = 25
                                 ))
                             }) {
