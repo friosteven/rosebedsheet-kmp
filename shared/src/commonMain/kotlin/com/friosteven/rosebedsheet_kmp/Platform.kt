@@ -1,7 +1,9 @@
 package com.friosteven.rosebedsheet_kmp
 
-interface Platform {
-    val name: String
-}
+import io.ktor.client.plugins.logging.Logger
+import org.koin.core.module.Module
 
-expect fun getPlatform(): Platform
+
+expect fun platformModule(): Module
+
+expect fun createPlatformLogger(): Logger

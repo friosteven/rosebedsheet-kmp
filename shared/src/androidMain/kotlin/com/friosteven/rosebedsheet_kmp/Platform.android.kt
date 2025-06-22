@@ -1,7 +1,18 @@
 package com.friosteven.rosebedsheet_kmp
 
-class AndroidPlatform : Platform {
-    override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"
+import android.util.Log
+import io.ktor.client.engine.HttpClientEngine
+import io.ktor.client.engine.okhttp.OkHttp
+import io.ktor.client.plugins.logging.Logger
+import org.koin.dsl.module
+
+
+actual fun platformModule() = module {
+    single<HttpClientEngine> { OkHttp.create() }
 }
 
-actual fun getPlatform(): Platform = AndroidPlatform()
+actual fun createPlatformLogger(): Logger = object : Logger {
+    override fun log(message: String) {
+        Log.d("HttpClient", message)
+    }
+}

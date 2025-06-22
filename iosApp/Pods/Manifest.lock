@@ -1,0 +1,20 @@
+PODS:
+  - KMPNativeCoroutinesAsync (1.0.0-ALPHA-14):
+    - KMPNativeCoroutinesCore (= 1.0.0-ALPHA-14)
+  - KMPNativeCoroutinesCore (1.0.0-ALPHA-14)
+
+DEPENDENCIES:
+  - KMPNativeCoroutinesAsync (= 1.0.0-ALPHA-14)
+
+SPEC REPOS:
+  trunk:
+    - KMPNativeCoroutinesAsync
+    - KMPNativeCoroutinesCore
+
+SPEC CHECKSUMS:
+  KMPNativeCoroutinesAsync: 5d1302f04e7abada6127d38c5bf02056623034e7
+  KMPNativeCoroutinesCore: 345bfd45a84bf8a2dcbeea7dc6d72f509b880e73
+
+PODFILE CHECKSUM: b170df8fa1df66cea84248ccb934941c6a145de1
+
+COCOAPODS: 1.16.2

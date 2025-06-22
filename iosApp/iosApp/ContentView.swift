@@ -1,12 +1,12 @@
 import SwiftUI
 import shared
+import KMPNativeCoroutinesAsync
+
 
 struct ContentView: View {
-	let greet = Greeting().greet()
-
-	var body: some View {
-		Text(greet)
-	}
+    var body: some View {
+        SellerView()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
