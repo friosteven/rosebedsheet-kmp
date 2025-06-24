@@ -1,3 +1,105 @@
-# Gradle files
+# =================================================================
+# General IDE and OS files
+# =================================================================
+
+# JetBrains / IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+modules.xml
+out/
+gen/
+build/
+local.properties
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+*.swp
+
+
+# =================================================================
+# Gradle
+# =================================================================
 .gradle/
 build/
+!build/kotlin/
+!build/generated/
+!build/generated/sqldelight/
+gradle-app.setting
+gradle.properties.user
+captures/
+*.log
+
+# Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# =================================================================
+# Kotlin Multiplatform specific
+# =================================================================
+
+# Common build output directory
+build/
+
+# Kotlin/Native temporary caches and intermediates
+.klib/
+build/klib/
+build/bin/
+build/classes/
+build/konan/
+build/tmp/
+build/libs/
+
+# Generated project files
+/gradlew
+/gradlew.bat
+/gradle.bat
+
+# =================================================================
+# Android specific
+# =================================================================
+
+# Located in the androidApp directory
+androidApp/build/
+androidApp/.cxx/
+androidApp/.gradle/
+androidApp/captures/
+androidApp/*.apk
+androidApp/*.aab
+androidApp/release/
+androidApp/debug/
+
+# Signing keys - NEVER commit these to version control
+*.jks
+*.keystore
+secrets.properties
+
+# =================================================================
+# iOS / Xcode specific
+# =================================================================
+
+# Located in the iosApp directory and root
+iosApp/build/
+iosApp/Pods/
+iosApp/fastlane/test_output/
+iosApp.xcworkspace/
+*.xcworkspace/
+xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+
+# Carthage
+Carthage/Build
+Carthage/Checkouts
+
+# CocoaPods
+Pods/
+
+# Derived data
+DerivedData/
+
