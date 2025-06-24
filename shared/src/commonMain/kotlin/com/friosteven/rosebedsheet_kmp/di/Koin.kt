@@ -17,6 +17,6 @@ object DIHelper : KoinComponent {
         }
     }
 
-    val sellerPresenter: SellerPresenter by inject()
+    fun getSellerPresenter(): SellerPresenter = get()
 
 }

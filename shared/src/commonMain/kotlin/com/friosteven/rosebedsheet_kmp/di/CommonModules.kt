@@ -102,7 +102,7 @@ val repositoryModule = module {
 }
 
 val presenterModule = module {
-    single { SellerPresenter(repository = get()) }
+    factory { SellerPresenter(repository = get()) }
 }
 
 fun appModule() = listOf(

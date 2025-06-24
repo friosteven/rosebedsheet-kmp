@@ -9,17 +9,21 @@
 import Foundation
 import shared
 
-@propertyWrapper
-struct Injected<Dependency> {
-    
-    private let keyPath: KeyPath<DIHelper, Dependency>
-    
-    var wrappedValue: Dependency {
-        DIHelper.shared[keyPath: keyPath]
-    }
-    
-    init(_ keyPath: KeyPath<DIHelper, Dependency>) {
-        self.keyPath = keyPath
-    }
-    
-}
+
+//@propertyWrapper
+//struct Inject<Dependency> {
+//
+//    let wrappedValue: Dependency
+//
+//    init(_ factory: () -> Dependency) {
+//        self.wrappedValue = factory()
+//    }
+//}
+//
+//enum DI {
+//    static let sellerPresenter: () -> SellerPresenter = {
+//        return DIHelper.shared.getSellerPresenter()
+//    }
+//    
+//    
+//}

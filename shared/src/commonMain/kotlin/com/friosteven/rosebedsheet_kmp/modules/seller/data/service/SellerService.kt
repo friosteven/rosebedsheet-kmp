@@ -41,6 +41,4 @@ class SellerService(private val httpClient: HttpClient) {
     suspend fun fetchCategoriesWithSizes(): List<CategoriesWithSizesDto> {
         return httpClient.get(urlString = "/rest/v1/rpc/get_categories_with_sizes").body()
     }
-
-
 }
